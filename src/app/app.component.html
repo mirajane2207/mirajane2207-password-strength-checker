@@ -1,3 +1,6 @@
-<main class="main">
-  <app-password-strength></app-password-strength>
-</main>
+<form [formGroup]="form" class="container">
+  <app-password-input formControlName="password"></app-password-input>
+  <app-password-strength
+    [strength]="passwordStrength"
+  ></app-password-strength>
+</form>
